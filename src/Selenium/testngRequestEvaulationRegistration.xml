@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="suite" parallel="false">
+<parameter name="suite-param" value="play" />
+<parameter name="suite-param2" value="play" />
+  <test name="Test">
+    <classes>
+      <class name="Selenium.RequestEvaulationRegistration"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
