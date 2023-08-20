@@ -113,9 +113,9 @@ public class RequestQuotePage extends PageObjects.GenericPageObject{
         webDriver.switchToFrameAndWaitForElement_By_ID(Coupon_Code_ID, IFRAME_XPATH);
     }
     
-    public void Check_Request_Pricing() throws Exception
-    {
-    	webDriver.switchToFrameAndWaitForElement_By_Xpath(Request_Pricing_XPATH, IFRAME_XPATH);
-    }
+//    public void Check_Request_Pricing() throws Exception
+//    {
+//    	webDriver.switchToFrameAndWaitForElement_By_Xpath(Request_Pricing_XPATH, IFRAME_XPATH);
+//    }
 
 }

@@ -54,6 +54,8 @@ import java.awt.image.BufferedImage;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
+import static org.testng.Assert.assertEquals;
+
 public class GenericWebDriver {
 
 	RemoteWebDriver webdriver;
@@ -68,15 +70,10 @@ public class GenericWebDriver {
 	    /*
 	     *  set capability to download files
 	     */
-		String downloadFilepath = "C:\\Utility\\OP_Resources\\ChromeDownload";
-		HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
-		chromePrefs.put("profile.default_content_settings.popups", 0);
-		chromePrefs.put("download.prompt_for_download", "false");
-		chromePrefs.put("download.default_directory", downloadFilepath);
+
 		ChromeOptions options = new ChromeOptions();
-		options.setExperimentalOption("prefs", chromePrefs);
 		options.addArguments("start-maximized");
-		options.addArguments("disable-infobars");
+
 		DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 		
 		LoggingPreferences loggingPreferences = new LoggingPreferences();
@@ -88,9 +85,6 @@ public class GenericWebDriver {
 		webdriver = new RemoteWebDriver(url, capabilities);
 
 		this.testLog = testLog;
-		
-		webdriver.manage().window().maximize();
-		webdriver.setFileDetector(new LocalFileDetector());
 	}
 	
 	public void testSendMail()
@@ -137,6 +131,43 @@ public class GenericWebDriver {
 			e.printStackTrace();
 		}
 		
+		return ElementText;
+	}
+
+	public String GetTextFromElementByCSS(String ELEMENT_CSS, String iframeID) throws Exception {
+
+		WebElement Element = null;
+
+		String ElementText = "";
+
+		Integer timeout = 10;
+
+		String currentWindow = webdriver.getWindowHandle();
+
+		try
+		{
+			webdriver.switchTo().frame(iframeID);
+		}catch(NoSuchFrameException e)
+		{
+			throw new Exception(e.getMessage(), e);
+		}
+
+		try
+		{
+			Element = getElementBy(ByTypes.css, ELEMENT_CSS, timeout, true);
+
+			ElementText = Element.getText();
+
+
+		} catch (Exception e)
+		{
+			printScreen("Failed getting element from text");
+
+			e.printStackTrace();
+		}
+
+		webdriver.switchTo().window(currentWindow);
+
 		return ElementText;
 	}
 	
@@ -359,21 +390,6 @@ public class GenericWebDriver {
 
 	}
 	
-	public void CheckIfUnityIsLoaded() {
-		
-		boolean isRobotLoaded = false;
-		
-		JavascriptExecutor js = (JavascriptExecutor) webdriver;  
-		
-		
-		if(!(isRobotLoaded)) {
-			
-			webdriver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-			
-			isRobotLoaded = (boolean) js.executeScript("return window.runnerService.isLoaded()");
-		}
-	}
-	
 	public void executeJavaScript(String script) {
 		
 		JavascriptExecutor js = (JavascriptExecutor) webdriver;  
@@ -392,6 +408,7 @@ public class GenericWebDriver {
 		
 		return Attribute_Value;
 	}
+
 
 	public WebElement getElementBy(ByTypes type, String value, int timeout, boolean mandatory) 
 	{
@@ -606,12 +623,13 @@ public class GenericWebDriver {
 	
 	
 
-	public void swithcToFrameAndSendKeys(String xpathExpression, String keys, boolean clear, String frameId)
+	public void switchToFrameAndSendKeys(String cssExpression, String keys, boolean clear, String frameId)
 			throws Exception {
 		String currentWindow = webdriver.getWindowHandle();
+
 		webdriver.switchTo().frame(frameId);
 
-		WebElement element = webdriver.findElement(By.xpath(xpathExpression));
+		WebElement element = webdriver.findElement(By.cssSelector(cssExpression));
 
 		element.click();
 		if (clear == true) {
@@ -621,6 +639,8 @@ public class GenericWebDriver {
 		element.sendKeys(keys);
 		webdriver.switchTo().window(currentWindow);
 	}
+
+
 
 	public void dragAndDrop(String xpathFrom, String xpathTo) {
 
@@ -777,28 +797,68 @@ public class GenericWebDriver {
 		}
 		return str;
 	}
+
+	/**********************************************************************************
+	 **
+	 * Switch to Frame by id and check if Element_xpath/css is located in the frame
+	 **********************************************************************************/
+	public void switchToFrameAndClickElement(ByTypes type, String element_value, String frame_id, Boolean waitForCommercial, int i) throws Exception
+	{
+		String currentWindow = webdriver.getWindowHandle();
+
+		int timeout = 40;
+
+		WebElement element = null;
+
+		webdriver.switchTo().defaultContent();
+
+		try
+		{
+			if(waitForCommercial && i == 0){
+				Thread.sleep(35000);
+			}
+
+			webdriver.switchTo().frame(frame_id);
+
+			switch (type) {
+				case xpath:
+					element = getElementBy(ByTypes.xpath, element_value, timeout, true);
+					break;
+				case css:
+					element = getElementBy(ByTypes.css, element_value, timeout, true);
+					break;
+				default:
+					break;
+			}
+
+			element.click();
+
+			webdriver.switchTo().window(currentWindow);
+		}catch(NoSuchFrameException e)
+		{
+			throw new Exception(e.getMessage(), e);
+		}
+	}
 	
 	/**********************************************************************************
 	 **
-	 * Switch to Frame xpath and check if Element_xpath is located in the frame
+	 * Switch to Frame xpath and check if Element_css is located in the frame
 	 **********************************************************************************/
-	public void switchToFrameAndWaitForElement_By_Xpath(String element_value, String frameXPATH) throws Exception
+	public void switchToFrameAndWaitForElement_By_CSS(String element_value, String iframe_ID) throws Exception
 	{
 		String currentWindow = webdriver.getWindowHandle();
-		
-		int timeout = 10;
-		
-		WebDriverWait wait = new WebDriverWait(webdriver, timeout, 1000);
+
+		int timeout = 30;
 
 		webdriver.switchTo().defaultContent();
 		
 		try 
 		{
-			//webdriver.switchTo().frame(frameXPATH);
-			webdriver.switchTo().frame(0);
-			
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(element_value)));
-			
+			webdriver.switchTo().frame(iframe_ID);
+			//webdriver.switchTo().frame(1);
+
+			getElementBy(ByTypes.css, element_value, timeout, true);
+
 			webdriver.switchTo().window(currentWindow);
 		}catch(NoSuchFrameException e)
 		{
@@ -835,7 +895,7 @@ public class GenericWebDriver {
 		}
 	}
 	
-	public void switchToFrameAndCheckInnerTextInElement(String element_value, String frameXPATH, String ExpectedInnerText) throws Exception
+	public void switchToFrameAndCheckInnerTextInElement(String element_value, String frameID, String ExpectedInnerText) throws Exception
 	{
 		WebElement element = null;
 		
@@ -843,7 +903,7 @@ public class GenericWebDriver {
 		
 		String currentWindow = webdriver.getWindowHandle();
 		
-		int timeout = 10;
+		int timeout = 20;
 		
 		WebDriverWait wait = new WebDriverWait(webdriver, timeout, 1000);
 
@@ -851,7 +911,7 @@ public class GenericWebDriver {
 		
 		try 
 		{
-			webdriver.switchTo().frame(frameXPATH);
+			webdriver.switchTo().frame(frameID);
 			
 			JavascriptExecutor jse = (JavascriptExecutor)webdriver;
 			
@@ -859,15 +919,15 @@ public class GenericWebDriver {
 			
 			Thread.sleep(2000);
 			
-			element = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(element_value)));
+			element = wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(element_value)));
 			
 			ElementInnerText = element.getText();
 			
-			System.out.println("Receipt total price is " + ElementInnerText); 
+			System.out.println("Game date is " + ElementInnerText);
 			
-			//assertEquals(ElementInnerText, ExpectedInnerText);
+			assertEquals(ElementInnerText, ExpectedInnerText);
 			
-			webdriver.switchTo().window(currentWindow);
+		//	webdriver.switchTo().window(currentWindow);
 			
 		}catch(NoSuchFrameException e)
 		{
@@ -896,25 +956,25 @@ public class GenericWebDriver {
 		webdriver.switchTo().window(currentWindow);
 	}
 	
-	public void switchToFrameAndClickElement(String element_XPATH, String frameID) throws Exception
-	{
-
-		String currentWindow = webdriver.getWindowHandle();
-
-        webdriver.switchTo().defaultContent();
-		
-		try 
-		{
-			webdriver.switchTo().frame(frameID);
-		}catch(NoSuchFrameException e)
-		{
-			throw new Exception(e.getMessage(), e);
-		}
-
-		WebElement Element = getElementBy(ByTypes.xpath, element_XPATH);
-		
-		openInNewTabAndSwitch(Element);
-	}
+//	public void switchToFrameAndClickElement(String element_XPATH, String frameID) throws Exception
+//	{
+//
+//		String currentWindow = webdriver.getWindowHandle();
+//
+//        webdriver.switchTo().defaultContent();
+//
+//		try
+//		{
+//			webdriver.switchTo().frame(frameID);
+//		}catch(NoSuchFrameException e)
+//		{
+//			throw new Exception(e.getMessage(), e);
+//		}
+//
+//		WebElement Element = getElementBy(ByTypes.xpath, element_XPATH);
+//
+//		openInNewTabAndSwitch(Element);
+//	}
 	
 	public String switchToFrameAndGetTextFromElement(String element_XPATH, String frameID) throws Exception
 	{
@@ -976,10 +1036,29 @@ public class GenericWebDriver {
 		
 		webdriver.getPageSource().contains(TextThatShouldBeDisplayedOnPage);
 	}
-	
 
-    
-    
+	public int CountingNumberOfLiElementsUsingCSS(String element_value, String iframeID) throws Exception {
+
+		WebDriverWait wait = new WebDriverWait(webdriver, 10, 1000);
+
+		WebElement element = null;
+
+		try
+		{
+			webdriver.switchTo().frame(iframeID);
+		}catch(NoSuchFrameException e)
+		{
+			throw new Exception(e.getMessage(), e);
+		}
+
+		element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(element_value)));
+
+		List<WebElement> li = element.findElements(By.tagName("li"));
+
+		System.out.println("List size is: " + li.size());
+
+		return li.size();
+	}
 }
 
 

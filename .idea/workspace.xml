@@ -5,198 +5,60 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cec41d4c-9649-4c3b-bf15-326f8615dc45" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__cglib_cglib_nodep_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/config/multi/multiQA4965.prop" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/config/multi/multiQA4971.prop" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/config/nh.prop" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/config/play.prop" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/config/play/play.prop" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/config/play/playCoderzLeagueRegistration.prop" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/config/play/playResetPassword.prop" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/config/qa.prop" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/config/skillz.prop" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/config/snpp.prop" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/config/test.prop" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/config/test/test301.prop" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/config/test/testCrxjasyftx.prop" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/config/test/testExpired.prop" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/config/test/testNew.prop" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/config/test/testNir18.prop" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/config/test/testnTdQDsJlow.prop" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/config/testSkillz.prop" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/config/testnh.prop" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PageObjects/CrosswordPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PageObjects/PickDatePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PageObjects/PlayPageBeforeAdvertisementDisplayed.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PageObjects/PrivacyFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PageObjects/QuestionsSection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PageObjects/ResultsFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Selenium/DailyQuickCrossword.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/Date.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_23_6_jre.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okhttp3_okhttp_3_9_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okio_okio_1_13_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_8_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_compat_qual_2_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_api_3_12_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_chrome_driver_3_12_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_edge_driver_3_12_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_firefox_driver_3_12_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_ie_driver_3_12_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_java_3_12_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_opera_driver_3_12_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_remote_driver_3_12_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_safari_driver_3_12_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_support_3_12_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NirPages/CoderzClientProfileMainPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NirPages/CoderzCoursesPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NirPages/CoderzJoinClassEnterPasswordPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NirPages/CoderzJoinClassSignUpPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NirPages/CoderzLeftBlueSargel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NirPages/Left_Coderz_Menu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NirPages/LicensesApplicationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NirPages/LicensesApplicationPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NirPages/Mailinator_CoderzLeague_Receipt_Email.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NirPages/ManagerAddTeacherPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NirPages/ManagerBlackMenu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NirPages/ManagerDashboardLoginPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NirPages/ManagerLoginPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NirPages/ManagerUsersPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NirPages/MissionPageNir.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NirPages/ProjectsPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NirPages/RegistrationPageStaging.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NirPages/RequestDemoPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NirPages/TeacherActivationPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NirTests/CoderzTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NirPages/MailinatorGetQuoteMail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NirPages/MailinatorGetQuoteMail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NirPages/MailinatorPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NirPages/MailinatorPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NirPages/RequestQuotePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NirPages/RequestQuotePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Selenium/BasicTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Selenium/BasicTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Selenium/CoderzMissionAndCreateNewTeacher.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Selenium/CoderzMissions.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Selenium/CoderzResetPassword.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Selenium/CoderzTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Selenium/CoderzTestNir18.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Selenium/Coderz_Ecommerce_Reports.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Selenium/GenericWebDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Selenium/GenericWebDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Selenium/LeagueRegistration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Selenium/MatchMakingTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Selenium/RequestEvaulationRegistration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Selenium/Selenium4Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Selenium/Selenium4Tests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Selenium/Selenium4Tests2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Selenium/Selenium4Tests2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Selenium/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Selenium/testng.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ClassDrill1/Phone.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ClassDrill1/Phone.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ClassDrill1/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ClassDrill1/main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Interfaces/CSVWriter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaces/CSVWriter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Interfaces/HtmlWriterImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaces/HtmlWriterImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Interfaces/MainInterfaces.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaces/MainInterfaces.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/JunitLesson1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JunitLesson1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/JunitLesson1/BasicTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JunitLesson1/BasicTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/JunitLesson1/TestCalcs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JunitLesson1/TestCalcs.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/JunitLesson1/TestClass1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JunitLesson1/TestClass1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/JunitLesson2/LogStep.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JunitLesson2/LogStep.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/JunitLesson2/StepAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JunitLesson2/StepAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/JunitLesson2/TestLog.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JunitLesson2/TestLog.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/JunitLesson2/testJunitLesson2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JunitLesson2/testJunitLesson2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Lesosn6Drill/Phone.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Lesosn6Drill/Phone.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PageObjects/AddItemPageObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PageObjects/AddItemPageObject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PageObjects/GenericPageObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PageObjects/GenericPageObject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PageObjects/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PageObjects/LoginPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PageObjects/ikeaPageObjects/IkeaHomePageObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PageObjects/ikeaPageObjects/IkeaHomePageObject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/QA/pali.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/QA/pali.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Selenium/BWPrinterImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Selenium/BWPrinterImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Selenium/BasicTest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Selenium/BasicTest$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Selenium/BasicTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Selenium/BasicTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Selenium/ColorPrinterImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Selenium/ColorPrinterImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Selenium/ConfigTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Selenium/ConfigTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Selenium/DbTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Selenium/DbTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Selenium/EdgeWebDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Selenium/EdgeWebDriver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Selenium/FirefoxWebDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Selenium/FirefoxWebDriver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Selenium/GenericWebDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Selenium/GenericWebDriver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Selenium/IEWebDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Selenium/IEWebDriver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Selenium/JunitAdv1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Selenium/JunitAdv1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Selenium/JunitAdvanceedTest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Selenium/JunitAdvanceedTest$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Selenium/JunitAdvanceedTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Selenium/JunitAdvanceedTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Selenium/Lesson27.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Selenium/Lesson27.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Selenium/LinkedListNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Selenium/LinkedListNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Selenium/LinkedLists.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Selenium/LinkedLists.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Selenium/MyFirstTestClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Selenium/MyFirstTestClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Selenium/Selenium4Tests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Selenium/Selenium4Tests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Selenium/SeleniumAdv.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Selenium/SeleniumAdv.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Selenium/ikeaTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Selenium/ikeaTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Selenium/junitAdv2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Selenium/junitAdv2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Selenium/suiterunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Selenium/suiterunner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Services/ConfigFileImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Services/ConfigFileImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Services/HtmlReporterImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Services/HtmlReporterImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Services/MongoDbService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Services/MongoDbService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Services/MySqlDbService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Services/MySqlDbService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Services/ServicesTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Services/ServicesTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Services/Utils$fileUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Services/Utils$fileUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Services/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Services/Utils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TestObjects/LogStep.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TestObjects/LogStep.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TestObjects/StepAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TestObjects/StepAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TestObjects/TestLog.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TestObjects/TestLog.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TestObjects/_LogStep.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TestObjects/_LogStep.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TestObjects/_StepAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TestObjects/_StepAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TestObjects/_TestLog.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TestObjects/_TestLog.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/enums/ActionStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/enums/ActionStatus.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/enums/ByTypes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/enums/ByTypes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson1/Chars.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson1/Chars.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson1/Decimal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson1/Decimal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson1/Integers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson1/Integers.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson1/Strings.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson1/Strings.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson2/Pc.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson2/Pc.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson2/Truck.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson2/Truck.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson2/Vehicle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson2/Vehicle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson2/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson2/main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson3/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson3/Admin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson3/Bus.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson3/Bus.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson3/Ifelse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson3/Ifelse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson3/MainClassLesson3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson3/MainClassLesson3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson3/Mgmt.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson3/Mgmt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson3/Taxi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson3/Taxi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson3/TestCopy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson3/TestCopy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson3/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson3/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson3/Vehicle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson3/Vehicle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson3/While.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson3/While.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson3/forLoop.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson3/forLoop.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson3/switchCase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson3/switchCase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson4/Coordinator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson4/Coordinator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson4/DbTables.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson4/DbTables.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson4/ForLoops.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson4/ForLoops.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson4/Lists.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson4/Lists.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson4/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson4/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson4/Teacher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson4/Teacher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson4/classA.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson4/classA.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson5/Arrays.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson5/Arrays.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson5/HW_sulotion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson5/HW_sulotion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson5/IfElse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson5/IfElse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson5/MainClass$PrvClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson5/MainClass$PrvClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson5/MainClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson5/MainClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson5/StaticUtils$fileUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson5/StaticUtils$fileUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson5/StaticUtils$netUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson5/StaticUtils$netUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson5/StaticUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson5/StaticUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson5/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson5/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson5/SwitchClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson5/SwitchClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson5/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson5/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson5/WhileClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson5/WhileClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson5/abstractClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson5/abstractClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson5/main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson5/main$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson5/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson5/main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson6/GenericWebDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson6/GenericWebDriver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson7/HWSulotion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson7/HWSulotion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson7/Seasons.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson7/Seasons.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson7/TryCatch.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson7/TryCatch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson7/mainClassEnums.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson7/mainClassEnums.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson8/BasicTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson8/BasicTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson8/SecondTestClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson8/SecondTestClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson8/SuperClass$autoUtils$stamUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson8/SuperClass$autoUtils$stamUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson8/SuperClass$autoUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson8/SuperClass$autoUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson8/SuperClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson8/SuperClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson8/TestOne.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson8/TestOne.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson8/TestReporter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson8/TestReporter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lesson8/mainClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson8/mainClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/seleniumLesson5/GenericPageObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/seleniumLesson5/GenericPageObject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/seleniumLesson5/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/seleniumLesson5/LoginPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/seleniumLesson5/LoginPageTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/seleniumLesson5/LoginPageTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Suite/Test.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Suite/Test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Suite/Test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Suite/Test.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Suite/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Suite/testng-failed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/emailable-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/Suite/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/Suite/classes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/Suite/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/Suite/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/Suite/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/Suite/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/Suite/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/Suite/methods-alphabetical.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/Suite/methods-not-run.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/Suite/methods-not-run.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/Suite/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/Suite/methods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/Suite/testng.xml.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/Suite/testng.xml.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/Suite/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/Suite/toc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-failed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/testng-reports.css" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-reports.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/testng-reports.js" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-reports.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-results.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -207,14 +69,9 @@
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
-    <option name="enabledProfiles">
-      <list>
-        <option value="sanityy" />
-      </list>
-    </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2SivlXTTCZWC64qC0fg7lkoSpe8" />
   <component name="ProjectViewState">
@@ -224,31 +81,124 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/GIT/java/java_automation&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/GIT/java_backup for java automation/j3_assinement/JavaAutomation&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.kotlinCompiler&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\GIT\java_backup for java automation\j3_assinement\JavaAutomation\files\config" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\GIT\java_backup for java automation\j3_assinement\JavaAutomation\files\config\play" />
+    </key>
+  </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
-      <command value="mvn  -Dtest -Psanityy" />
-      <command value="mvn -DTest -Psanityy" />
-      <command value="mvn clean" />
       <command value="mvn install" />
+      <command value="mvn -DTest -Psanityy" />
+      <command value="mvn  -Dtest -Psanityy" />
+      <command value="install -Dtest -Psanityy" />
+      <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="C:/GIT/java/java_automation/src/Selenium/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Maven.AutomationCourse [install,-DTest...]">
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
       <module name="AutomationCourse" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="JavaAutomation" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="JavaAutomation" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AutomationCourse [install,-DTest...]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="install" />
+                <option value="-DTest" />
+                <option value="-Psanityy" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="C:/GIT/java_backup for java automation/j3_assinement/JavaAutomation/src/Selenium/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AutomationCourse" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/Selenium/testng.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DailyQuickCrossword.FinishDailyQuickCrossword" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AutomationCourse" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Selenium.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Selenium" />
+      <option name="MAIN_CLASS_NAME" value="Selenium.DailyQuickCrossword" />
+      <option name="METHOD_NAME" value="FinishDailyQuickCrossword" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Unnamed" />
+      <item itemvalue="Maven.AutomationCourse [install,-DTest...]" />
+      <item itemvalue="TestNG.DailyQuickCrossword.FinishDailyQuickCrossword" />
+      <item itemvalue="TestNG.C:/GIT/java_backup for java automation/j3_assinement/JavaAutomation/src/Selenium/testng.xml" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/GIT/java/java_automation/src/Selenium/testng.xml" />
+        <item itemvalue="TestNG.DailyQuickCrossword.FinishDailyQuickCrossword" />
+        <item itemvalue="TestNG.C:/GIT/java_backup for java automation/j3_assinement/JavaAutomation/src/Selenium/testng.xml" />
       </list>
     </recent_temporary>
   </component>

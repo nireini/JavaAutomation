@@ -30,8 +30,7 @@ import NirPages.WordPressLoginPage;
 import NirPages.WordPressWooCommercePage;
 import NirPages.WordPressWooCommerceSettingsPaymentPaypalCheckout;
 import NirPages.PardotLoginPage;
-import PageObjects.AddItemPageObject;
-import PageObjects.LoginPage;
+import PageObjects.*;
 import Services.*;
 import TestObjects.TestLog;
 
@@ -127,63 +126,23 @@ public class BasicTest {
 
 	String browser = null;
 
+	Date date;
+
 	public String env;
 	
 	public String fileName;
 
-	public LoginPageNir loginPageNir;
-	
-	public GmailLoginPage gmailLoginPage;
-	
-	public GmailAllMailsDisplayedPage gmailAllMailsDisplayedPage;
-	
-	public ResetYourPasswordPage resetYourPasswordPage;
+	public PrivacyFrame privacyFrame;
 
-	public WelcomePage welcomePage;
+	public PlayPageBeforeAdvertisementDisplayed playPageBeforeAdvertisementDisplayed;
 
-	
+	public PickDatePage pickDatePage;
 
-	public SimulationPageNir simulationPageNir;
-	
-	public SubmitRequestPage submitRequestPage;
-	
+	public CrosswordPage crosswordPage;
 
-	
-	public SelectProgramPage selectProgramPage;
-	
-	public UserDetailsFillingPage userDetailsFillingPage;
-	
-	public WordPressLoginPage wordPressLoginPage;
-	
-	public WordPressWooCommercePage wordPressWooCommercePage;
-	
-	public MailinatorPage mailinatorPage;
-	
+	public ResultsFrame resultsFrame;
 
-	
-	public LicensesApplicationPage licensesApplicationPage;
-	
-	public MailinatorGetQuoteMail mailinatorGetQuoteMail;
-	
-	
-	
-	public PardotLoginPage pardotLoginPage;
-	
-
-	
-	public RequestQuotePage requestQuotePage;
-	
-	public DuplicatorProPage duplicatorProPage;
-	
-	public Office365_login_page office365_login_page;
-	
-	public SharePoint_Upload_File_Section sharePoint_Upload_File_Section;
-	
-	public WordPressWooCommerceSettingsPaymentPaypalCheckout wordPressWooCommerceSettingsPaymentPaypalCheckout;
-	
-	public Microsoft_Sign_In_Page microsoft_Sign_In_Page;
-	
-	public Microsoft_Enter_Password_Page microsoft_Enter_Password_Page;
+	public QuestionsSection questionsSection;
 	
 	
 
@@ -198,9 +157,12 @@ public class BasicTest {
 			env = System.getProperty("env");
 		} else {
 			env = "play";
-			fileName = "playCoderzLeagueRegistration";
+			fileName = "play";
 		}
-		
+
+
+		date = new Date();
+
 		testlog = new TestLog();
 
 		reporter = new HtmlReporterImpl();
@@ -214,68 +176,19 @@ public class BasicTest {
 			// IP For Docker machine 
 			// webdriver.init("http://192.168.99.100:4444/wd/hub", testlog);
 			
-			loginPageNir = new LoginPageNir(webdriver);
-			
-			
-			
-			simulationPageNir = new SimulationPageNir(webdriver);
-			
-			gmailLoginPage = new GmailLoginPage(webdriver);
-			
-			gmailAllMailsDisplayedPage = new GmailAllMailsDisplayedPage(webdriver);
-			
-			resetYourPasswordPage = new ResetYourPasswordPage(webdriver);
-			
 
-			
-			
-			
-			
-			/**********************************************************************************/
-		    /**********************************************************************************/
-		        
-		    /**********************************************************************************
-		    **instances for coderz league registration
-		    **********************************************************************************/
-			selectProgramPage = new SelectProgramPage(webdriver);
-			
-			userDetailsFillingPage = new UserDetailsFillingPage(webdriver);
-			
-			wordPressLoginPage = new WordPressLoginPage(webdriver);
-			
-			wordPressWooCommercePage = new WordPressWooCommercePage(webdriver);
-			
-			mailinatorPage = new MailinatorPage(webdriver);
-			
-			mailinatorGetQuoteMail = new MailinatorGetQuoteMail(webdriver);
-			
 
-			
-			licensesApplicationPage = new LicensesApplicationPage(webdriver);
-			
-			
-			
-			pardotLoginPage = new PardotLoginPage(webdriver);
-			
-			
-			
-			requestQuotePage = new RequestQuotePage(webdriver);
-			
-			duplicatorProPage = new DuplicatorProPage(webdriver);
-			
-			office365_login_page = new Office365_login_page(webdriver);
-			
-			sharePoint_Upload_File_Section = new SharePoint_Upload_File_Section(webdriver);
-			
-			wordPressWooCommerceSettingsPaymentPaypalCheckout = new WordPressWooCommerceSettingsPaymentPaypalCheckout(webdriver);
-			
-			microsoft_Sign_In_Page = new Microsoft_Sign_In_Page(webdriver);
-			
-			microsoft_Enter_Password_Page = new Microsoft_Enter_Password_Page(webdriver);
-			
-		
-			
-			
+			privacyFrame = new PrivacyFrame(webdriver);
+
+			playPageBeforeAdvertisementDisplayed = new PlayPageBeforeAdvertisementDisplayed(webdriver);
+
+			pickDatePage = new PickDatePage(webdriver);
+
+			crosswordPage = new CrosswordPage(webdriver);
+
+			resultsFrame = new ResultsFrame(webdriver);
+
+			questionsSection = new QuestionsSection(webdriver);
 			
 			/**********************************************************************************/
 		    /**********************************************************************************/

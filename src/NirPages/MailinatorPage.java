@@ -101,7 +101,7 @@ public class MailinatorPage extends PageObjects.GenericPageObject{
     
     public void Click_THIS_LINK() throws Exception
     {
-    	webDriver.switchToFrameAndClickElement(THISLINK_XPATH, MAILILANTOR_IFRAME_ID);
+    	webDriver.switchToFrameAndClickElement(ByTypes.xpath, THISLINK_XPATH, MAILILANTOR_IFRAME_ID, false, 1);
     }
     
     public int ClickTheCorrectEmail() 

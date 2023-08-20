@@ -3,6 +3,11 @@
 	<groupId>AutomationCourse</groupId>
 	<artifactId>AutomationCourse</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
 	<build>
 		<sourceDirectory>src</sourceDirectory>
 		<plugins>
@@ -10,8 +15,8 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.7.0</version>
 				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
+					<source>20</source>
+					<target>20</target>
 				</configuration>
 			</plugin>
 		</plugins>
@@ -80,12 +85,7 @@
 			<artifactId>mongo-java-driver</artifactId>
 			<version>3.4.0</version>
 		</dependency>
-<dependency>
-    <groupId>org.testng</groupId>
-    <artifactId>testng</artifactId>
-    <version>7.8.0</version>
-    <scope>test</scope>
-</dependency>
+
 <dependency>
     <groupId>org.slf4j</groupId>
     <artifactId>slf4j-api</artifactId>
@@ -138,7 +138,7 @@
 							<version>3.1.2</version>
 							<configuration>
 								<suiteXmlFiles>
-									<suiteXmlFile>C:\GIT\java\java_automation\src\Selenium\testng.xml</suiteXmlFile>
+									<suiteXmlFile>C:\GIT\java_backup for java automation\j3_assinement\JavaAutomation\src\Selenium\testng.xml</suiteXmlFile>
 								</suiteXmlFiles>
 							</configuration>
 						</plugin>
@@ -148,25 +148,7 @@
 		</profile>
 
 
-		<profile>
-			<id>dbtest</id>
-			<build>
-				<pluginManagement>
-					<plugins>
-						<plugin>
-							<groupId>org.apache.maven.plugins</groupId>
-							<artifactId>maven-surefire-plugin</artifactId>
-							<version>2.22.0</version>
-							<configuration>
-								<suiteXmlFiles>
-									<suiteXmlFile>C:\GIT\java projects\java1\java_automation\src\Selenium\testngDBTEST2.xml</suiteXmlFile>
-								</suiteXmlFiles>
-							</configuration>
-						</plugin>
-					</plugins>
-				</pluginManagement>
-			</build>
-		</profile>
+
 		<profile>
 			<id>Sanity</id>
 			<build>
@@ -174,12 +156,12 @@
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-surefire-plugin</artifactId>
-						<version>2.17</version>
+						<version>3.1.2</version>
 						<dependencies>
 							<dependency>
 								<groupId>org.apache.maven.surefire</groupId>
 								<artifactId>surefire-junit47</artifactId>
-								<version>2.17</version>
+								<version>3.1.2</version>
 							</dependency>
 						</dependencies>
 						<configuration>

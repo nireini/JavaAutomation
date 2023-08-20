@@ -18,7 +18,7 @@ public class Selenium4Tests extends BasicTest {
 	public void switchToFrame() throws Exception{
 		webdriver.openUrl("https://the-internet.herokuapp.com/iframe");
 		
-		webdriver.swithcToFrameAndSendKeys("//body[@id='tinymce']//p", "aaaa", true, "mce_0_ifr");
+		webdriver.switchToFrameAndSendKeys("//body[@id='tinymce']//p", "aaaa", true, "mce_0_ifr");
 	}
 	
 	@Test
