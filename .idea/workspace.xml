@@ -5,48 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cec41d4c-9649-4c3b-bf15-326f8615dc45" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/PageObjects/CrosswordPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PageObjects/PickDatePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PageObjects/PlayPageBeforeAdvertisementDisplayed.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PageObjects/PrivacyFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PageObjects/QuestionsSection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PageObjects/ResultsFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Selenium/DailyQuickCrossword.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/Date.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_23_6_jre.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okhttp3_okhttp_3_9_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okio_okio_1_13_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_8_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_compat_qual_2_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_api_3_12_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_chrome_driver_3_12_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_edge_driver_3_12_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_firefox_driver_3_12_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_ie_driver_3_12_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_java_3_12_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_opera_driver_3_12_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_remote_driver_3_12_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_safari_driver_3_12_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_support_3_12_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NirPages/MailinatorGetQuoteMail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NirPages/MailinatorGetQuoteMail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NirPages/MailinatorPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NirPages/MailinatorPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NirPages/RequestQuotePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NirPages/RequestQuotePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Selenium/BasicTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Selenium/BasicTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Selenium/GenericWebDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Selenium/GenericWebDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Selenium/Selenium4Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Selenium/Selenium4Tests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Selenium/Selenium4Tests2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Selenium/Selenium4Tests2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Selenium/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Selenium/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
