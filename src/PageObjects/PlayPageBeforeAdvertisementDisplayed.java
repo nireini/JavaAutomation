@@ -11,7 +11,7 @@ public class PlayPageBeforeAdvertisementDisplayed extends GenericPageObject{
     private static final String PLAY_BUTTON_CSS = "div.ark-ad-button-text.ctaButtonText";
 
     public void clickOnPlayButton() throws Exception {
-        webDriver.getElementBy(ByTypes.css, PLAY_BUTTON_CSS).click();
+        webDriver.getElementBy(ByTypes.css, PLAY_BUTTON_CSS, 10, true).click();
     }
 
 

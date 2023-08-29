@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cec41d4c-9649-4c3b-bf15-326f8615dc45" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/PageObjects/Play_More_Page.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PageObjects/PlayPageBeforeAdvertisementDisplayed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PageObjects/PlayPageBeforeAdvertisementDisplayed.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PageObjects/ResultsFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PageObjects/ResultsFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Selenium/BasicTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Selenium/BasicTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Selenium/DailyQuickCrossword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Selenium/DailyQuickCrossword.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +32,11 @@
       <MavenGeneralSettings>
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
+    </option>
+    <option name="enabledProfiles">
+      <list>
+        <option value="sanityy" />
+      </list>
     </option>
   </component>
   <component name="ProblemsViewState">

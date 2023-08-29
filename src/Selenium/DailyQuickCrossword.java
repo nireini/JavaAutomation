@@ -116,12 +116,22 @@ public class DailyQuickCrossword extends BasicTest{
 
         resultsFrame.Check_SECTION_ONE_PUZZLE_THIS_MONTH_Is_Displayed();
 
-        testlog.addStep("Check Submit total score button is displayed");
-
-        resultsFrame.CheckSubmitTotalScoreButtonIsDisplayed();
-
         testlog.addStep("Check REVIEW ANSWERS BUTTON is displayed");
 
         resultsFrame.Check_REVIEW_ANSWERS_BUTTON_Is_Displayed();
+
+        webdriver.printScreen("results iframe");
+
+        testlog.addStep("Click Submit total score button");
+
+        resultsFrame.ClickSubmitTotalScoreButton();
+
+        testlog.addStep("Click on play again button");
+
+        playMorePage.clickOnPlayAgainButton();
+
+        testlog.addStep("Click on play button");
+
+        playPageBeforeAdvertisementDisplayed.clickOnPlayButton();
     }
 }

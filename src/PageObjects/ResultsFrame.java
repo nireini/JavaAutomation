@@ -1,6 +1,7 @@
 package PageObjects;
 
 import Selenium.GenericWebDriver;
+import enums.ByTypes;
 
 public class ResultsFrame extends GenericPageObject{
     public ResultsFrame(GenericWebDriver webDriver) {
@@ -33,8 +34,8 @@ public class ResultsFrame extends GenericPageObject{
     private static final String SECTION_ONE_PUZZLE_THIS_MONTH_CSS = "section._1WOLqIpDmSmsJGpFvS9fPR.gameEndPopup_window__Y44DQ > section:nth-child(2) > section:nth-child(8) > section:nth-child(1) > h4:nth-child(2)";
 
 
-    public void CheckSubmitTotalScoreButtonIsDisplayed() throws Exception {
-        webDriver.switchToFrameAndWaitForElement_By_CSS(BUTTON_SUBMIT_TOTAL_SCORE_CSS, GAMEIFRAME_ID);
+    public void ClickSubmitTotalScoreButton() throws Exception {
+        webDriver.switchToFrameAndClickElement(ByTypes.css, BUTTON_SUBMIT_TOTAL_SCORE_CSS, GAMEIFRAME_ID, false, 1);
     }
 
     public void Check_REVIEW_ANSWERS_BUTTON_Is_Displayed() throws Exception {

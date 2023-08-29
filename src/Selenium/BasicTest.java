@@ -143,6 +143,7 @@ public class BasicTest {
 	public ResultsFrame resultsFrame;
 
 	public QuestionsSection questionsSection;
+	public Play_More_Page playMorePage;
 	
 	
 
@@ -189,6 +190,8 @@ public class BasicTest {
 			resultsFrame = new ResultsFrame(webdriver);
 
 			questionsSection = new QuestionsSection(webdriver);
+
+			playMorePage = new Play_More_Page(webdriver);
 			
 			/**********************************************************************************/
 		    /**********************************************************************************/
